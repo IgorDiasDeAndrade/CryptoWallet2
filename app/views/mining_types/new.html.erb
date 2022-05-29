@@ -1,0 +1,12 @@
+<h1><%= t('links.newminingtype') %></h1>
+<div class="h100 p-5 bg-light rounded-3">
+ 
+
+  <%= render "form", mining_type: @mining_type %>
+
+  <br>
+
+  <div>
+    <%= link_to "Back to mining types", mining_types_path %>
+  </div>
+</div>

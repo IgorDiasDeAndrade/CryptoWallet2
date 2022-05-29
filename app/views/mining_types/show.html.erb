@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+<div class="h100 p-5 bg-light rounded-3">
+<%= render @mining_type %>
+
+  <div>
+    <%= link_to t('links.edittype'), edit_mining_type_path(@mining_type) %> |
+    <%= link_to t('links.backtotypes'), mining_types_path %>
+    <p></p>
+    <%= button_to t('links.destroythistype'), @mining_type, method: :delete, class:"btn btn-dark btn-sm", role:"button" %>
+  </div>
+</div>

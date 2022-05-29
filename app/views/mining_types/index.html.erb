@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1><%= t('links.newminingtype') %></h1>
+
+<div class="h100 p-5 bg-light rounded-3">
+  <div id="mining_types">
+    <% @mining_types.each do |mining_type| %>
+      <%= render mining_type %>
+      
+    <% end %>
+  </div>
+  <%= link_to t('links.newminingtype'), new_mining_type_path %>
+</div>
+
+

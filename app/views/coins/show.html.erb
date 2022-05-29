@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+<div class="h100 p-5 bg-light rounded-3">
+  <%= render @coin %>
+
+  <div>
+    <%= link_to "Edit this coin", edit_coin_path(@coin) %> |
+    <%= link_to "Back to coins", coins_path %>
+    <p></p>
+    <%= button_to t('links.destroythiscoin'), @coin, method: :delete, class:"btn btn-dark btn-sm", role:"button" %>
+  </div>
+</div>

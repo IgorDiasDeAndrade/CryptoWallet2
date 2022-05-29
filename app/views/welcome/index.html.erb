@@ -1,0 +1,14 @@
+<div>
+  <div class="h100 p-5 bg-light rounded-3">
+    <h1 class="display-4"><%=t('welcome')%></h1>
+    <p class="lead"><%= t('messages.welcome')%></p>
+    <hr class="my-4">
+    <p><%= t('messages.menu') %></p>
+    <p class="lead">
+        <%= render "menu"%>
+    </p>
+  </div>
+  
+</div>
+<p> <strong><%=t('accessdate')%></strong> <%= I18n.l(Date.today) %></p>
+<p><%= t('language')%> <strong><%= t('actual_locale') %></strong></p>

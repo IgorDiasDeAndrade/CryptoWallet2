@@ -1,0 +1,12 @@
+<h1><%=t('links.newcoin')%></h1>
+<div class="h100 p-5 bg-light rounded-3">
+
+
+  <%= render "form", coin: @coin %>
+
+  <br>
+
+  <div>
+    <%= link_to t('links.backtocoins'), coins_path %>
+  </div>
+</div>
